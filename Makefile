@@ -6,8 +6,8 @@
 #
 ####################################################################
 
-LOC_SDK := /cygdrive/c/Users/maorchar/Simplicity/latest/developer/sdks/gecko_sdk_suite/v2.6
-LOC_EXAMPLES := ${LOC_SDK}/app/bluetooth/examples_ncp_host
+LOC_SDK := ble-ncp-cli
+LOC_EXAMPLES := .
 
 DUMMY := ${shell chmod -Rc u+rwX .}
 
