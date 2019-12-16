@@ -90,7 +90,7 @@ AR = ar
 ####################################################################
 
 INCLUDEPATHS += \
--I${LOC_EXAMPLES}/common/uart \
+-I${LOC_SDK}/uart \
 -I${LOC_SDK}/protocol/bluetooth/ble_stack/inc/common \
 -I${LOC_SDK}/protocol/bluetooth/ble_stack/inc/host
 
@@ -157,9 +157,9 @@ app.c \
 
 # this file should be the last added
 ifeq ($(OS),posix)
-C_SRC += ../common/uart/uart_posix.c
+C_SRC += ${LOC_SDK}/uart/uart_posix.c
 else ifeq ($(OS),win)
-C_SRC += ${LOC_EXAMPLES}/common/uart/uart_win.c
+C_SRC += ${LOC_SDK}/uart/uart_win.c
 endif
 
 s_SRC += 
